@@ -1,0 +1,32 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" xmlns:th:"https://thymleaf.org">
+<title>Insert title here</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body class="text-left">
+ <form th:action="@{/addUser}" method="post" class="container">
+ <h1 th:text="${date}"></h1>
+ <a th:href="@{/addUser}">Click here for Registration</a>
+<div class="form-group" style="margin-top:5%">
+<lable forname="username">Username</lable>
+<input type="text" placeholder="please enter Username" class="form-control" name="name" id="name" required>
+</div>
+<div class="form-group" style="margin-top:5%">
+<lable forname="email">Email</lable>
+<input type="email" placeholder="please enter Email" class="form-control" name="username" id="username" required>
+</div>
+<div class="form-group" style="margin-top:5%">
+<lable forname="password">Password</lable>
+<input type="password" placeholder="please enter Password" class="form-control" name="password"
+ id="password" required>
+</div>
+<div class="form-group" style="margin-top:5%">
+ <input type="submit"  class="btn btn-success" name="submit" id="submit">
+</div>
+</form>
+</body>
+</html>
